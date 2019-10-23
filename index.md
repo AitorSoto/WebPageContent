@@ -1,3 +1,3 @@
 # Cosas de BD
 ## Tema 1
-BInary --> 
+Binary --> Para buscar directamente la palabra que le ponga. Por ejemplo: 'Aitor' != 'aitor'
