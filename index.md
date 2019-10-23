@@ -1,5 +1,6 @@
 # Cosas de BD
 ## Tema 1
-[Codigo deberes](code-work.md)
+### [Codigo deberes](code-work.md)
+### [codigo Simon]
 Binary --> Para buscar directamente la palabra que le ponga. Por ejemplo: 'Aitor' != 'aitor'
 REGEXP --> '^Palabra$' _ --> Cualquier caracter
