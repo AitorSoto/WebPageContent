@@ -178,7 +178,7 @@ LIMIT    0;
 -- Hay nulos pero en el WHERE se quitan al expecificar que el porcentaje tiene que ser mayor que 75%
 
 SELECT 21 AS 'Consulta';
--- Consulta 21. Nombre local de los países que han aumentado su producto nacional bruto (PNB) y que o son muy pequeños o tienen muy poca población. Entendemos por pequeño una superficie menor que 100 kilómetros cuadrados y muy poca población si es menor que 100 mil habitantes.
+-- Consulta 21. Nombre local de los países que han aumentado su producto nacional bruto (PNB) y que o son muy pequeños o tienen muy poca población. Entendemos por pequeño una -- superficie menor que 100 kilómetros cuadrados y muy poca población si es menor que 100 mil habitantes.
 SELECT NombreLocal AS 'Nombre local', PNB, PNBAnt AS 'PNB Anterior', Superficie, Poblacion
 FROM   Pais
 WHERE  PNBAnt IS NOT NULL AND PNB > PNBAnt AND (Superficie < 100 OR Poblacion < 100000)
