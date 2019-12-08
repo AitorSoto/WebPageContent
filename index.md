@@ -14,6 +14,7 @@ Renta per capita --> PNB*1000000/Poblacion
 ### [Codigo deberes](code-work2.md)
 ### [Codigo Simon](simon-code2.md)
 #### Ayuda
+**LEFT JOIN -->** Si aparece 'No' o 'Todas'
 **ORDER BY EN UNION ALL -->** 
 ```SQL
 (SELECT Poblacion, Nombre, 'Pais' AS 'Tipo' FROM Pais LIMIT 10)
