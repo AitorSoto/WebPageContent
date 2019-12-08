@@ -24,3 +24,4 @@ UNION ALL
 ORDER BY Poblacion DESC
 ```
 **Consultas escalares -->** Tienes que hacer un limit 1 para que te aparezca el primer registro y no casque la consulta
+**UNION -->** UNION DISTINCT cuando pone 'o', UNION ALL para el resto
