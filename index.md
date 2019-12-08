@@ -13,3 +13,7 @@ Renta per capita --> PNB*1000000/Poblacion
 ## Tema 2
 ### [Codigo deberes](code-work2.md)
 ### [Codigo Simon](simon-code2.md)
+**ORDER BY EN UNION ALL -->** (SELECT Poblacion, Nombre, 'Pais' AS 'Tipo' FROM Pais LIMIT 10)
+                              UNION ALL
+                              (SELECT Poblacion, Nombre, 'Ciudad' FROM Ciudad LIMIT 10)
+                              ORDER BY Poblacion DESC
