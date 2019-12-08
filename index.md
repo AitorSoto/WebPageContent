@@ -17,3 +17,4 @@ Renta per capita --> PNB*1000000/Poblacion
                               UNION ALL
                               (SELECT Poblacion, Nombre, 'Ciudad' FROM Ciudad LIMIT 10)
                               ORDER BY Poblacion DESC
+**Consultas escalares -->** Tienes que hacer un limit 1 para que te aparezca el primer registro y no casque la consulta
