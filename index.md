@@ -14,11 +14,11 @@ Renta per capita --> PNB*1000000/Poblacion
 ### [Codigo deberes](code-work2.md)
 ### [Codigo Simon](simon-code2.md)
 #### Ayuda
-**ORDER BY EN UNION ALL -->** (SELECT Poblacion, Nombre, 'Pais' AS 'Tipo' FROM Pais LIMIT 10)
+**ORDER BY EN UNION ALL -->** ```MySQL(SELECT Poblacion, Nombre, 'Pais' AS 'Tipo' FROM Pais LIMIT 10)
 
                               UNION ALL
 
                               (SELECT Poblacion, Nombre, 'Ciudad' FROM Ciudad LIMIT 10)
                               
-                              ORDER BY Poblacion DESC
+                              ORDER BY Poblacion DESC```
 **Consultas escalares -->** Tienes que hacer un limit 1 para que te aparezca el primer registro y no casque la consulta
