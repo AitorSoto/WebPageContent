@@ -31,3 +31,4 @@ ORDER BY Poblacion DESC
 ### [Codigo Simon](simon-code3.md)
 #### Ayuda
 Sale un ejercicio de Random y otro de UNION ALL con tablas
+En las consultas correlacionadas si en la subconsulta hay un join el ON se hace en el where
