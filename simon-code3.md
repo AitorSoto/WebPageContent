@@ -432,9 +432,7 @@ WHERE  Region = 'Western Europe';
 	FROM     Pais JOIN LenguaPais
 	ON       Pais.Codigo = LenguaPais.CodigoPais
 	WHERE    Porcentaje > 20 AND Continente = 'Europe'
-	GROUP BY CodigoPais;				
-				
-				
+	GROUP BY CodigoPais;
 -- 28. De cada continente indica: número de países que lo componen, superficie del país más extenso y del país más pequeño, media de población de sus países y el PNB del continente. Redondea los resultados				
 				
 	SELECT   Continente,
@@ -488,12 +486,13 @@ WHERE  Region = 'Western Europe';
 	GROUP BY 1
 	ORDER BY 2 DESC;
 				
--- 34. Número de ciudades cuya población está en cada tramo de medio millón de habitantes (primer tramo, de 0 a medio millón, segundo tramo de medio a un millón, etc). Añadir las columnas desde y hasta de cada tramo				
+-- 34. Número de ciudades cuya población está en cada tramo de medio millón de habitantes (primer tramo, de 0 a medio millón, segundo tramo de medio a un millón, etc). Añadir las columnas desde y hasta de cada tramo
 	SELECT   TRUNCATE(Poblacion/500000,0)*500000 AS 'Desde', 
 			 TRUNCATE(Poblacion/500000, 0)*500000 + 499999 AS 'Hasta',    -- OJO CUIDAO AL EXAMEN HULIO
 			 COUNT(*)
 	FROM     Ciudad
-	GROUP BY 1;
+	GROUP BY 1
+	ORDER BY 1;
 				
 -- 35. Número de países en cada tramo de incremento o decremento del PNB en decenas de miles de millones de dólares (el PNB se mide en millones de dólares)				
 	SELECT	 FLOOR((PNB-PNBAnt)/10000)*10000 AS 'DESDE',

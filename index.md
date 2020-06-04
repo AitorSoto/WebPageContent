@@ -32,3 +32,10 @@ ORDER BY Poblacion DESC
 #### Ayuda
 Sale un ejercicio de Random y otro de UNION ALL con tablas
 En las consultas correlacionadas si en la subconsulta hay un join el ON se hace en el where
+
+## Tema 4
+### [Codigo deberes](code-work4.md)
+### [Codigo Simon](simon-code4.md)
+
+## Tema 5
+### [Codigo deberes](code-work5.md)
